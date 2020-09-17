@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-
+       <!-- Here I specified the background color by adding a style element and specifying the color-->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: cadetblue;">
         <a class="navbar-brand" href="#">Victor Scherman</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,37 +16,41 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <!-- Here I inserted links to the other html documents in our directory-->
+                <a class="nav-link" href="contact.html">Contact</a>  
             </li>
             <li class="nav-item">
+              <!-- Here I inserted links to the other html documents in our directory-->
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
+              <!-- Here I inserted links to the other html documents in our directory-->
+                <a class="nav-link" href="index.html">About/Home</a>
               </li>
          </ul>
           
         </div>
      </nav> 
-
+             <!--Changed the class to container-sm in order for it to create margins on sm size screens and up-->
      <div class="container-sm">
 
       <form>
-
+            <!-- Changed the text in the following 3 form groups to reflect name, email, and message-->
         <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
         </div>
 
         <div class="form-group">
           <label for="exampleFormControlInput1">Email address</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
         </div>
-
+             <!-- Changed this element into a text box by changing input1 to text area 1. I also added a rows element and set it to 4 the appropriate bootstrap class was <textarea class="form control"-->
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Message</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Enter a message"></textarea>
         </div>
+        <!-- I added a submit button to our box as well-->
 
         <button type="submit" class="btn btn-primary">Submit</button>
 
